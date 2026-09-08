@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { UserCard } from "./components/01_RequiredOptionalProps";
 import { Greet } from "./components/02_DefaultProps";
 import { RequiredChildren, UserData } from "./components/03_ChildrenReactNode";
+import { Button } from "./components/05_ConponentProps";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <RequiredChildren title="show Children" >
         children
       </RequiredChildren>
+      <Button variant="primary" onClick={() => alert("clicked")} style={{ color: "red" }}>Text</Button>
     </>
   )
 }
