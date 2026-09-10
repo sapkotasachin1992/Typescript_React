@@ -3,7 +3,8 @@ import { UserCard } from "./components/01_RequiredOptionalProps";
 import { Greet } from "./components/02_DefaultProps";
 import { RequiredChildren, UserData } from "./components/03_ChildrenReactNode";
 import { Button } from "./components/05_ConponentProps";
-import { Counter } from "./components/06_state";
+// import { Counter } from "./components/06_state";
+import { TypeReducer } from "./components/08_TypeUseReducer";
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       <Button variant="primary" onClick={() => alert("clicked")} style={{ color: "red" }}>Text</Button>
       <br />
       <br />
-      <Counter />
+      {/* <Counter /> */}
+      <TypeReducer />
     </>
   )
 }
